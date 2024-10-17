@@ -2,13 +2,11 @@ package com.example.task03;
 
 public class Task03Main {
     public static void main(String[] args) {
-        TimeUnit unit1 = new Seconds(1000);
-        printTimeUnit(unit1);
-    }
+        Milliseconds ms = new Milliseconds(29999);
 
-    private static void printTimeUnit(TimeUnit unit) {
-        System.out.println(String.format("Milliseconds: %d", unit.toMillis()));
-        System.out.println(String.format("Seconds:      %d", unit.toSeconds()));
-        System.out.println(String.format("Minutes:      %d", unit.toMinutes()));
+        System.out.println("Milliseconds: " + ms.toMillis());
+        System.out.println("Seconds: " + ms.toSeconds());
+        System.out.println("Minutes: " + ms.toMinutes());
+        System.out.println("Hours: " + ms.toHours());
     }
 }
